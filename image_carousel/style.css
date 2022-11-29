@@ -1,0 +1,87 @@
+.image{
+    display: none;
+}
+
+body {
+    background-color: #4B3F72;
+}
+
+#header{
+    color: white;
+    margin-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    position: flex;
+    
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#prev{
+    position: absolute;
+    color: white;
+    background-color: #119DA4;
+    top: 50%;
+    left: 20%;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 5px;
+}
+
+#next{
+    position: absolute;
+    color: white;
+    background-color: #119DA4;
+    top: 50%;
+    right: 20%;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 5px;
+}
+
+#prev:hover, #next:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dots{
+    text-align: center;
+    margin: 2%;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: background-color o.6s ease;
+}
+
+.active{
+    background-color: rgb(82, 82, 82);
+}
+
+.fade{
+    animation: fade 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
